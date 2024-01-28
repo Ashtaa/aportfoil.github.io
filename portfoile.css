@@ -33,6 +33,141 @@ body{
         padding: 5px;
       }
       .logo{
+        display: none;
+        position: absolute;
+        color: rgb(33, 33, 43);
+        left: 50px;
+        font-size: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      .gallery-container {
+        position: absolute;
+        top: 100px;
+        left: 10%;
+        width: 600px; /* Set the desired width for the gallery container */
+        overflow: hidden;
+        background-color: #000000;
+        width: 80%;
+        border-radius: 10px;
+      }
+      
+      .gallery {
+        display: flex;
+        width: fit-content;
+        transition: transform 0.5s ease;
+      }
+      
+      .gallery-item {
+        flex: 0 0 600px; /* Set the width of each gallery item to match the container width */
+      }
+      
+      .gallery-item img {
+        width: 50%;
+        height: 50%;
+      }
+      .gallery-container button {
+        background-color: #000000;
+        color: #dad6d6;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        padding-left: 10px;
+      }
+      
+      .gallery-container button:hover {
+        background-color: #463b3b;
+      }
+      
+      .gallery-container button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+      /*calculater*/
+      .calculator {
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+        margin-left: 30%;
+        margin-top: 150%;
+        background-color: #000000;
+      }
+      
+      input[type="text"] {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
+      
+      .buttons button {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        font-size: 20px;
+      }
+      
+      .buttons button:nth-child(4n) {
+        clear: both;
+      }
+      
+      .buttons button:nth-child(1) {
+        background-color: red;
+        color: white;
+      }
+      
+      .buttons button:nth-child(14) {
+        background-color: green;
+        color: white;
+      }
+.js{
+  display: none;
+  position:absolute;
+  left: 50px;
+  top: 50%;
+  font-size: 50px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  font-weight: bolder;
+  color: #dad6d6;
+  background-color: #000000;
+  border-radius: 20px;
+  height: 150px;
+}
+@media(min-width:1115){
+  body{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+  }
+  nav {
+    padding: 10px;
+    margin-top: 0%;
+    font-size: 20px;
+    
+    text-align: right;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    display: inline-block;
+  }
+  
+  li {
+    display: inline-block;
+    margin-right: 10px;
+    display: inline-block;}
+    a {
+        text-decoration: none;
+        color: #333;
+        padding: 5px;
+      }
+      .logo{
         position: absolute;
         color: rgb(33, 33, 43);
         left: 50px;
@@ -129,4 +264,5 @@ body{
   background-color: #000000;
   border-radius: 20px;
   height: 150px;
+}
 }
